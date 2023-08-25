@@ -38,5 +38,4 @@ next-env.d.ts
 
 .yarnrc.yml
 .yarn
-package.json
 package-lock.json
