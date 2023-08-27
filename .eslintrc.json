@@ -1,16 +1,9 @@
-
 {
-  "env": {
-    "node": true,
-    "browser": true
-  },
-  "extends": [
-    "next/core-web-vitals",
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
+  "extends": "next",
   "rules": {
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   }
 }
+
 
