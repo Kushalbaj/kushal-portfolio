@@ -14,12 +14,46 @@
   --ring: 161, 161, 170;
 }
 
+html.light {
+  --foreground: 23, 23, 23;
+  --background: 0, 0, 100%;
+  --muted-foreground: 82, 82, 91;
+  --primary: 23, 23, 23;
+  --primary-foreground: 255, 255, 255;
+  --secondary: 244, 244, 245;
+  --accent: 82, 82, 91;
+  --accent-foreground: 23, 23, 23;
+  --ring: 82, 82, 91;
+}
+
+html.dark {
+  --foreground: 255, 255, 255;
+  --background: 224 71% 4%;
+  --muted-foreground: 161, 161, 170;
+  --primary: 255, 255, 255;
+  --primary-foreground: 23, 23, 23;
+  --secondary: 23, 23, 23;
+  --accent: 161, 161, 170;
+  --accent-foreground: 255, 255, 255;
+  --ring: 161, 161, 170;
+}
+
+html {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 body {
   color: rgb(var(--foreground));
-  background: hsl(var(--background));
+  background: transparent;
   font-feature-settings: 'rlig' 1, 'calt' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: color 0.5s ease;
+}
+
+/* Smooth transitions for theme switching */
+h1, h2, h3, h4, h5, h6, p, a, span, div, button {
+  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
 }
 
 

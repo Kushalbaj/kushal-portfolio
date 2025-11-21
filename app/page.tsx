@@ -8,7 +8,7 @@ import Contact from '@/components/Contact'
 
 export default function Home() {
   return (
-    <main className="min-h-screen text-white max-w-2xl mx-auto sm:py-24 px-6">
+    <main className="min-h-screen text-foreground max-w-2xl mx-auto sm:py-24 px-6 transition-colors duration-300">
       <div className="flex flex-col min-h-[100dvh] space-y-10">
         <Header />
         <About />

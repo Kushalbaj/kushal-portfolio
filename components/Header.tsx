@@ -1,20 +1,20 @@
 'use client'
 
+import ThemeToggle from './ThemeToggle'
+
 export default function Header() {
   return (
     <section id="hero">
       <div className="mx-auto w-full max-w-3xl space-y-8 py-4 md:p-4 lg:p-4">
         <div className="flex flex-col md:flex-row lg:justify-between items-start gap-4">
           <div className="flex flex-col gap-2 flex-grow">
-            <div className="flex flex-col md:flex-row lg:flex-row items-start lg:items-end gap-2">
+            <div className="flex flex-row items-center justify-between gap-2">
               <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold">Kushal Bajracharya</h1>
-              <a className="bg-foreground hover:bg-opacity-50 transition-all duration-300 rounded-md text-secondary text-sm px-2 font-mono font-semibold tracking-tighter" href="mailto:bajrakus20@gmail.com">
-                <span>Hire me!</span>
-              </a>
+              <ThemeToggle />
             </div>
             <div className="flex items-center gap-4 mt-4">
               <div className="max-w-[450px] text-muted-foreground text-sm lg:text-base">
-                Full-stack developer specializing in building scalable web applications and data-driven solutions. Experienced in developing real-time tracking systems, automated tariff calculations, and efficient algorithms for processing large datasets. Proficient in modern web technologies including React, Next.js, TypeScript, Node.js, and PostgreSQL, with a focus on creating high-performance software solutions that streamline business operations.
+                Full-stack Developer building scalable solutions. Currently Software Engineer @ PortPro.
               </div>
               <div className="flex-shrink-0">
                 <div className="w-[110px] h-[110px] rounded-lg overflow-hidden">
